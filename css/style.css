@@ -1,0 +1,233 @@
+/* --------------------- ESTRUTURA DO SITE --------------------- */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #FFF url("../img/fundo.png") repeat-x;
+}
+#container{
+  width: 750px;
+  margin: 0 auto;
+}
+#topo{
+  height: 150px;
+  background: url("../img/detalhe-topo.png") no-repeat right top;
+  padding-top: 25px;
+}
+.logo{
+  width: 152px;
+  height: 66px;
+  background: url("../img/logo.png") no-repeat center;
+  text-indent: -3000px;
+}
+/* --------------------- BARRA DE NAVEGAÇÃO --------------------- */
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#topo ul{
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+}
+#topo ul li{
+  float: left;
+}
+#topo ul a{
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #FFF;
+  background: url("../img/divisor.png") no-repeat left center;
+}
+#topo ul .primeiro a{
+  background: none;
+}
+#topo ul a:hover{
+  color: #69001d;
+}
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.ciencia #navegacao a#ciencia,
+body.economia #navegacao a#economia,
+body.fotos #navegacao a#fotos,
+body.internacional #navegacao a#internacional,
+body.saude #navegacao a#saude{
+  color: #FFF;
+  background: #de003e;
+  cursor: default;
+}
+/* --------------------- CONFIGURAÇÃO LAYOUT DE TRÊS COLUNAS --------------------- */
+#conteudo{
+  margin-top: 60px;
+  background: #F5F5F5;
+}
+#lateral{
+  width: 180px;
+  float: left;
+  margin: 0 0 20px -750px;
+}
+#tres-colunas #primario{
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+#duas-colunas #primario{
+  width: 555px;
+  float: left;
+  margin: 0 0 20px 0;
+}
+#uma-colunas #primario{
+  width: 555px;
+  background: blue;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+#secundario{
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 15px;
+}
+#container-rodape{
+  clear: both;
+  background: #294c71;
+  padding: 20px;
+}
+#rodape{
+  width: 750px;
+  margin: 0 auto;
+  color: #FFF;
+}
+/* --------------------- FORMATAR FORMULÁRIOS --------------------- */
+label{
+  display: block;
+  cursor: pointer;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: grey;
+}
+input[type="text"]{
+  padding: 5px;
+  width: 157px;
+  font-size: 0.9em;
+  background-color: #FFF;
+  margin-bottom: 4px;
+}
+input[type="submit"]{
+  width: 171px;
+  background-color: #294c71;
+  color: #FFF;
+  border: none;
+  padding: 4px;
+}
+input[type="submit"]:hover{
+  width: 171px;
+  background-color: #3d72a9;
+  color: #FFF;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+.formulario{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+/* --------------------- CONFIGURAÇÃO DAS CAIXAS DE CONTEÚDO --------------------- */
+.caixa{
+  margin: 10px 0;
+  padding: 5px 0 5px 0;
+  background: #f3f3f3 url("../img/fundo-caixa.png");
+}
+h2.lateral-um{
+  font-size: 1.1em;
+  background: #294c71;
+  color: #FFF;
+  padding: 5px;
+  margin: 0 auto;
+  width: 160px;
+}
+h2.segundo{
+  font-size: 1.1em;
+  background: #294c71;
+  color: #FFF;
+  padding: 5px;
+  margin: 0 auto;
+  width: 240px;
+}
+h2.terceiro{
+  font-size: 1.1em;
+  background: #294c71;
+  color: #FFF;
+  padding: 5px;
+  margin: 0 auto;
+  width: 240px;
+}
+h3{
+  font-size: 0.8em;
+  background-color: #b10333;
+  color: #FFF;
+  padding: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.caixa-coteudo{
+  background: white;
+  padding: 5px;
+  margin-top: 2px;
+}
+img.meio{
+  width: 250px;
+  margin-left: 10px;
+}
+.texto{
+  background: #FFF;
+  width: 240px;
+  margin-left: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+p{
+  margin-bottom: 3px;
+}
+a.link{
+  text-decoration: none;
+  color: #b10333;
+}
+a.link:hover{
+  text-decoration: none;
+  color: #fb0649;
+}
+/* --------------------- FORMATAÇÃO DE CONTEÚDO LATERAL --------------------- */
+#lateral ul a{
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+  padding-left: 7px;
+}
+#lateral ul a.um{
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+  padding-left: 7px;
+  margin-top: 10px;
+}
+#lateral ul a:hover{
+  background: #f9f9f9 url("../img/marcador.png") no-repeat left center;
+  color: #a1a1a1;
+  padding-left: 25px;
+}
